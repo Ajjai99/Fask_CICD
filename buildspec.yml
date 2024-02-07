@@ -16,6 +16,6 @@ phases:
   post_build:
     commands:
       - echo Tagging Flask Docker image
-      - docker tag flask_image:latest 761823580113.dkr.ecr.us-west-2.amazonaws.com/flask_image:latest
-      - docker push 761823580113.dkr.ecr.us-west-2.amazonaws.com/flask_image:latest
+      - docker tag flask_image:latest 761823580113.dkr.ecr.us-west-2.amazonaws.com/flask_image:0.1
+      - docker push 761823580113.dkr.ecr.us-west-2.amazonaws.com/flask_image:0.1
       - echo Flask image pushed to ECR
